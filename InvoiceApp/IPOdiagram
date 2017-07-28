@@ -1,0 +1,33 @@
+Input                                                             Processing                                                   			Output
+
+Get from user						Store							
+Get from storage                                     Calculate                                            
+
+
+
+Product description				Store string descr 						Prompt user for
+																			product description
+
+
+Prices (double price)                           Store double price                            			Prompt user for
+									For each price, add                       			price of product
+									to finalAmount
+
+Tax Rate (double taxRate)                Store double taxRate                     			 Prompt user for
+                                                                     (taxRate / 100)                                   			 tax rate
+
+
+
+Does the user want to continue?
+
+		Yes 						Allow the user to enter               			 Ask the user to add
+									another product                           			 another product (loop)
+    	 
+                 No							Calculate tax amount by             			 Display invoice with each
+									applying taxRate to                       			 product's price and description 	
+									subTotal (taxRate/100 * subTotal)		 along with the tax rate
+
+                                                                                                                                                         Calculate the tax amount and
+									   Calculate finalAmount after tax              sub total to get the finalAmount.
+									    by adding taxRateAmount to 		(taxRateAmount + subTotal = finalAmount)
+									    subTotal.
