@@ -5,11 +5,14 @@ package invoice;
 
 /**
  * @author Jerilyn Mensah
+ * Date: Friday July 28,2017
  *
  *
  *	This application will accept a list of products and its prices
  *	with the tax rate and will give an output of the product prices 
  *	added, the amount of tax due and the total amount due.
+ *
+ *  Sight modification on code done on 11:19 am.
  */
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +39,7 @@ public class InvoiceApp {
 		
 		String descr;              	 // Product description
 		String getPrice;			 // Finds the price of product
-		String description;		     // Finds the description of product
+		String description = null;		     // Finds the description of product
 		
 		List<Product> products = new ArrayList<Product>();  // Stores all products entered
 		
@@ -78,15 +81,14 @@ public class InvoiceApp {
 	
 		// Display the sub total of product and description
 	
-			for (Product p : products);{
+			for (Product p : products){
 				
-				
-				Object p;
-				subTotal += ((Product) p).getPrice();
-				System.out.println("Product price:" + ((Product) p).getPrice());
-				System.out.println("Product description:" +  ((Object) p).description());
+		    
+				subTotal += p.getPrice();
+				System.out.println("Product price:" + p.getPrice());
+				System.out.println("Product description:" + p.description());
 			}
-			
+	
 			
 		// Get the Tax rate Amount
 			
